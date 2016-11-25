@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Detai3Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kyo-n7-ton">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="EeA-wD-Q0V">
+                                <rect key="frame" x="305" y="10" width="7" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="7" id="2Ij-JB-bfj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="89R-8G-6Zk"/>
+                                    <constraint firstAttribute="width" constant="7" id="jR6-FS-T6L"/>
+                                    <constraint firstAttribute="height" constant="14" id="nEY-Be-HZZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyK-l2-tMg">
+                                <rect key="frame" x="15" y="6" width="282" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ids-td-usu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AyK-l2-tMg" firstAttribute="leading" secondItem="Kyo-n7-ton" secondAttribute="leading" constant="15" id="1hm-SU-xep"/>
+                            <constraint firstItem="AyK-l2-tMg" firstAttribute="centerY" secondItem="Kyo-n7-ton" secondAttribute="centerY" id="4pE-4l-qoX"/>
+                            <constraint firstItem="EeA-wD-Q0V" firstAttribute="leading" secondItem="AyK-l2-tMg" secondAttribute="trailing" constant="8" id="GOT-c4-BN3"/>
+                            <constraint firstItem="EeA-wD-Q0V" firstAttribute="centerY" secondItem="Kyo-n7-ton" secondAttribute="centerY" id="IhG-JQ-e5b"/>
+                            <constraint firstAttribute="trailing" secondItem="EeA-wD-Q0V" secondAttribute="trailing" constant="8" id="VgX-u9-5e5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Kyo-n7-ton" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0re-eT-iGa"/>
+                    <constraint firstAttribute="trailing" secondItem="Kyo-n7-ton" secondAttribute="trailing" id="Qqy-fC-QHy"/>
+                    <constraint firstAttribute="bottom" secondItem="Kyo-n7-ton" secondAttribute="bottom" constant="10" id="UcI-Ld-lqK"/>
+                    <constraint firstItem="Kyo-n7-ton" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mnW-EL-NTt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="AyK-l2-tMg" id="SS5-6d-Sli"/>
+                <outlet property="pic" destination="EeA-wD-Q0V" id="GZC-5g-H6d"/>
+            </connections>
+            <point key="canvasLocation" x="190" y="339.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="left3x.png" width="23" height="38"/>
+    </resources>
+</document>
